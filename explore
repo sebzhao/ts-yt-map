@@ -2,7 +2,6 @@
 
 server=$1
 password=$2
-concurrency="${3:-4}"
 
 echo "Running script with bash:"
 bash --version
@@ -17,4 +16,4 @@ if [ -z "$password" ]; then
   exit 1
 fi
 
-./client "$server" "$password" 1 "$concurrency"
+./client "$server" "$password" 1 1
